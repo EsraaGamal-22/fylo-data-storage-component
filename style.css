@@ -1,0 +1,167 @@
+body{
+    background-color:hsl(229, 57%, 11%) ;
+    background-image: url("images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position:0px 380px; /*0 horizontal,380 vertical */
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    margin:290px 50px 0px 250px;
+}
+.row-1{
+    width:27%;
+    padding: 40px 90px 20px 40px ;
+    background-color:  hsl(228, 56%, 26%);
+    border-radius: 10px 100px 10px 10px;
+}
+.img-part2{
+    display: inline-block;
+    width:12%;
+    height:auto;
+    background-color:hsl(229, 57%, 11%) ;
+    text-align: center;
+    padding: 12px;
+    border-radius:10px;
+    margin:25px 5px  ;
+}
+.row-2{
+    width:70%;
+    background-color:hsl(228, 56%, 26%);
+    border-radius:10px;
+    margin-top: 50px;
+    margin-right:100px;
+    margin-left: 20px;
+    color: hsl(243, 100%, 93%) ;
+    padding:22px 40px ;
+}
+progress{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 450px;
+    height: 15px;
+    position: relative;
+}
+progress::-webkit-progress-bar{ /*for style bar only*/
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+}
+progress::-webkit-progress-value { /* for style the content or value of bar*/
+   background-image: -webkit-linear-gradient(left,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+    border-radius: 10px; 
+   
+  }
+  progress::before{
+    content: '';
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    border-radius: 100%;
+    right: 134px;
+    bottom: 2px;
+    background-color: white;
+}
+.left,.right{
+    font-weight: 700;
+    margin-top:5px;
+    display:inline-block;
+    font-size: small;
+    
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+    margin-right: 50px;
+}
+
+.mess{
+    width:170px;
+    height: 80px;
+    margin: -220px 950px;
+    border-radius: 10px;
+    background-color:hsl(243, 100%, 93%) ;
+    position: relative;
+}
+.tri:before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 15px solid  hsl(243, 100%, 93%) ;
+    border-right: 15px solid transparent;
+    border-top: 15px solid hsl(243, 100%, 93%);
+    border-bottom: 15px solid transparent;
+    right: -15px;
+    left:140px;
+    top:70px;
+    bottom:0px;
+    transform: rotate(90deg);
+
+}
+.p1,.p2{
+    display: inline-block;
+    font-weight: 700; 
+}
+.p1{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.p2{
+    color: hsl(229, 7%, 55%);
+    text-transform: uppercase;
+    margin-left: 5px;
+}
+
+@media (max-width:1000px)
+{
+    body{
+        background-image: url("images/bg-mobile.png");
+        background-position:0px 0px;
+        background-size: cover;
+       
+    }
+    .container{
+        flex-direction: column;
+        margin: 130px 10px 10px 5px;
+    }
+    .row-1{
+        width: 50%;
+        padding: 40px 100px 10px 50px ;
+    }
+    .img-part2{
+        padding:13px 10px;
+        margin:25px 6px  ;
+    }
+    .row-2{
+        width:50%;
+       padding:10px 100px 60px 50px;
+        margin: 25px 0px;
+    }
+    .row-2 .pp1{
+        display: inline-block;
+        width: 250px;
+    }
+    progress{
+        width: 210px;
+         height: 15px;
+    }
+    progress::before{
+        right: 60px;
+    }
+    .right{
+        margin-right:-40px;
+    }
+    .mess{
+      
+        margin: -65px 78px;
+    
+    }
+    .tri:before{
+        display: none;
+    }
+}
