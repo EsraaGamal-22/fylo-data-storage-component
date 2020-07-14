@@ -75,7 +75,7 @@ progress::-webkit-progress-value { /* for style the content or value of bar*/
     border-radius: 100%;
     right: 110px;
     bottom: 2px;
-    background-color: white;
+    background-color: #ffffff;
 }
 .left,.right{
     font-weight: 700;
@@ -93,9 +93,9 @@ progress::-webkit-progress-value { /* for style the content or value of bar*/
 .mess{
     width:170px;
     height: 80px;
-    margin:-490px 950px;
+    margin:-500px 955px;
     border-radius: 10px;
-    background-color:hsl(243, 100%, 93%) ;
+    background-color:#ffffff ;
     position: relative;
 }
 .tri:before{
@@ -103,9 +103,9 @@ progress::-webkit-progress-value { /* for style the content or value of bar*/
     width: 0px;
     height: 0px;
     position: absolute;
-    border-left: 15px solid  hsl(243, 100%, 93%) ;
+    border-left: 15px solid  #ffffff ;
     border-right: 15px solid transparent;
-    border-top: 15px solid hsl(243, 100%, 93%);
+    border-top: 15px solid #ffffff;
     border-bottom: 15px solid transparent;
     right: -15px;
     left:140px;
@@ -120,7 +120,7 @@ progress::-webkit-progress-value { /* for style the content or value of bar*/
 }
 .p1{
     font-size: 40px;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-left: 24px;
 }
 .p2{
