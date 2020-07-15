@@ -12,14 +12,15 @@ body{
     max-width: 920px;
     place-items: center;/*will center the elements vertically and horizontally.*/
     margin:290px auto;
-    
+    padding-left: 80px;
+
 }
 .row-1{
     width:40%;
-    padding: 40px 130px 20px 40px ;
+    padding: 40px 30px 20px 45px ;
     background-color:  hsl(228, 56%, 26%);
     border-radius: 10px 100px 10px 10px;
-    margin-left: 50px;
+    
 }
 .img-part2{
     display:flex;
@@ -47,10 +48,11 @@ body{
     background-color:hsl(228, 56%, 26%);
     border-radius:10px;
     color: hsl(243, 100%, 93%) ;
-    padding:35px 40px ;
-    margin-top: 30px;
-    margin-left: 30px;
+    padding:30px 40px 40px 40px  ;
+    margin-top: 40px;
+    margin-left: 28px;
 }
+
 progress{
     -webkit-appearance: none;
     appearance: none;
@@ -79,7 +81,7 @@ progress::-webkit-progress-value { /* for style the content or value of bar*/
 }
 .left,.right{
     font-weight: 700;
-    margin-top:12px;
+    margin-top:10px;
     display:inline-block;
     font-size: small; 
 }
@@ -144,6 +146,7 @@ progress::-webkit-progress-value { /* for style the content or value of bar*/
         flex-direction: column;
         max-width: 376px;
         margin: 130px auto;
+        padding:0px;
     }
     .row-1{
         width: 50%;
